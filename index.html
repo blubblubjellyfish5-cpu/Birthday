@@ -929,6 +929,8 @@ function checkPassword(){
   const correct = 'sleafyzone';
   if(input === correct){
     launchConfetti(120);
+    bgMusic.play().catch(()=>{});
+musicPlaying = true;
     setTimeout(()=>{
       const ls = document.getElementById('lockScreen');
       ls.classList.add('fade-out');
